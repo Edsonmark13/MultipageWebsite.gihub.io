@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burgee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/8ad5cf4f0f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!-- Nav Bar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-darkred ">
+  <div class="container mt-5">
+      <a class="navbar-brand brand-logo-text" href="index.html" style="font-size: 50px;"></i> Burgee </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class=""><i class="fa-solid fa-burger" style="font-size: 30px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mt-3 m-auto">
+              <li class="nav-item nav-item-custom">
+                  <a class="nav-link active text-dark" aria-current="page" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+          </ul>
+          <hr />
+          <div class="d-grid gap-2 d-flex">
+              <button class="fa-solid fa-cart-shopping cart-img cart-btn" type="button" data-bs-toggle="modal" data-bs-target="#Cart"></button>
+              <button type="button" class="btn btn0 sign_in"><a
+                      href="login.html" style="text-decoration: none; color: white">Sign In</a></button>
+              <button class="btn btn0" type="button"><a
+                      href="register.html" style="text-decoration: none; color: white">Register</a></button>
+          </div>
+      </div>
+  </div>
+</nav>
+
+  <!-- Modal 
+    
+    <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="SignInBody" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container">
+            <div style="position: absolute; height: 5px; width: 100%; margin-left: -12px; border-top-left-radius: 30px; border-top-right-radius: 30px;" class="bg-darkred"></div>
+          <div class="d-flex justify-content-end me-2 p-2">
+            <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <h1 class="text-center text-darkred"><strong>Sign In</strong></h1>
+          <hr>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="Password">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Remember Me</label>
+              </div>
+              <div class="d-flex justify-content-center align-items-center mt-1">
+                <button type="submit" class="btn btn0">Log in</button>
+              </div>
+              <p class="lead text-center mt-5">Sign in with</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook-square continue-with-icon text-primary"></i>
+                <i class="fa-brands fa-google-plus-square continue-with-icon text-darkred"></i>
+                <i class="fa-brands fa-twitter-square continue-with-icon text-primary"></i>
+              </div>
+            </form>
+            <div class="mt-5">
+              <p>Don't have an account yet? <a href="#SignUp" data-bs-toggle="modal" role="button">Sign up here</a></p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpBody" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container">
+            <div style="position: absolute; height: 5px; width: 100%; margin-left: -12px; border-top-left-radius: 30px; border-top-right-radius: 30px;" class="bg-darkred"></div>
+          <div class="d-flex justify-content-end me-2 p-2">
+            <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <h1 class="text-center text-darkred"><strong>Sign Up</strong></h1>
+          <hr>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="Password">
+              </div>
+              <div class="mb-3">
+                <label for="PasswordConfirm" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="PasswordConfirm">
+              </div>
+              <div class="d-flex justify-content-center align-items-center mt-1">
+                <button type="submit" class="btn btn0">Sign Up</button>
+              </div>
+              <p class="lead text-center mt-5">Sign up with</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook-square continue-with-icon text-primary"></i>
+                <i class="fa-brands fa-google-plus-square continue-with-icon text-darkred"></i>
+                <i class="fa-brands fa-twitter-square continue-with-icon text-primary"></i>
+              </div>
+            </form>
+            <div class="mt-5">
+              <p>I have an account. <a href="#SignIn" data-bs-toggle="modal" role="button">Sign in now</a></p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- Cart -->
+  <div class="modal fade" id="Cart" tabindex="-1" aria-labelledby="CartBody" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container">
+          <div style="position: absolute; height: 5px; width: 100%; margin-left: -12px; border-top-left-radius: 30px; border-top-right-radius: 30px;" class="bg-darkred"></div>
+        <div class="d-flex justify-content-end p-2">
+          <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <h1 class="text-start text-darkred"><strong>Cart</strong></h1>
+        <hr>
+        <div class="modal-body">
+          <p class="lead">No item/s available</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!-- Showcase -->
+  <section class="showcase text-light text-center text-sm-start bg-gray text-dark">
+    <div class="container py-5">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <div class="">
+          <h1>Tasty <span class="text-darkred">Burgee,</span> <br>without the price </h1>
+          <p class="lead py-3">
+            Burgee is the best tasting, healthiest burger you can have. 
+            <br>
+            We use all-natural, hormone and antibiotic-free beef, 
+            and our cheese is made from organic milk.
+
+          </p>
+          <button class="btn btn1 my-1">Try Now</button>
+        </div>
+        <img src="./img/145511-king-big-photos-burger-hq-image-free-thumb.png" alt=""
+          class="img-fluid w-50 py-5 order-sm-1">
+        <div class="right_rect py-5 bg-yellow">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mt-3">
+        <div class="text-orange text-center showcase-info-box">
+          <p><strong style="font-size: 20px;">24hrs</strong></p>
+          <p style="margin-top: -20px;">Working Hours</p>
+        </div>
+        <div class="text-orange text-center ms-5 showcase-info-box">
+          <p><strong style="font-size: 20px;">Philippines</strong></p>
+          <p style="margin-top: -20px;">Location</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- info -->
+  <section class="info text-light text-center text-sm-start text-dark">
+    <div class="container">
+      <div class="tri-left"></div>
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <img src="./img/22501-3-shack-burger-thumb.png" alt="" class="img-fluid w-50 py-5">
+        <div class="">
+          <h1>Have a burger!
+            <br>
+            Burger, Burger, Burger!</h1>
+          <br>
+          <p class="lead">
+            <span class="text-darkred"><strong>Love cheeseburgers,</strong></span>
+            but looking for
+            something a little healthier?
+            <br />
+
+            Try our delicious, cheesy burger
+            alternative.
+            <br />
+
+            It's healthy and delicious!
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Today's Favorite -->
+  <section class="favorite">
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-dark text-center">Today's Favorite</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="favorite">
+    <div class="container-fluid bg-yellow py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center" id="todaysFavorite">
+            <!-- Today's favorite -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- delicious healthy Favorite -->
+  <section class="delicious text-light text-center text-sm-start text-dark">
+    <div class="container py-5">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <div class="">
+          <h1>The Best Chees Burger in Town!</h1>
+          <br>
+          <p class="lead py-3">
+            You're in for a real treat<br />
+            with our <span class="text-darkred"><strong>delicious healthy</strong></span> cheeseburgers.
+          </p>
+        </div>
+        <img src="./img/158967-burger-cheese-photos-classic-png-download-free-thumb.png" alt=""
+          class="img-fluid w-50 py-5 order-sm-1">
+        <div class="right_rect1 py-5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Menu -->
+  <section class="menu">
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-dark text-center">Explore Menu</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="menu_rect">
+  </div>
+
+  <section class="menu">
+
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center" id="menuList">
+          <!-- Menu list -->
+          
+        </div>
+        <div class="d-flex ms-auto mt-5">
+          <button class="btn btn0">
+            <a href="products.html" style="text-decoration: none; color: white">Explore</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- new Letter -->
+  <section class="news">
+    <div class="container news0">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="">
+          <h4 class="p-2"><strong>Get the latest news right in your inbox <br> <span class="text-orange"> 10%
+                Discount</span></strong></h4>
+        </div>
+        <div class="ps-3" style="width: 100%;">
+          <input type="text" name="" id="" class="form-control">
+        </div>
+        <div>
+          <a><button class="btn btn0" style="margin-left: -30px">Subscribe</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <section class="footer bg-darkred">
+      <div class="container-fluid">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                      <p class="lead">Links</p>
+                      <div class="footer-link-container" style="display: block;">
+                          <a href="index.html">Home</a>
+                          <br>
+                          <a href="about.hmtl">About Us</a>
+                          <br>
+                          <a href="products.html">Products</a>
+                          <br>
+                          <a href="contact.html">Contact Us</a>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                      <p class="lead">Social Links</p>
+                      <div class="footer-link-container">
+                          <div class="d-flex align-items-center" style="margin-top: -10px">
+                              <img src="./img/icons/facebook_48px.png" alt="" class="social_icon">
+                              <a href="">
+                                  <p class="mt-1">Facebook</p>
+                              </a>
+                          </div>
+                          <div class="d-flex align-items-center" style="margin-top: -10px">
+                              <img src="./img/icons/twitter_48px.png" alt="" class="social_icon">
+                              <a href="">
+                                  <p class="mt-1">Twitter</p>
+                              </a>
+                          </div>
+                          <div class="d-flex align-items-center" style="margin-top: -10px">
+                              <img src="./img/icons/Instagram_48px.png" alt="" class="social_icon">
+                              <a href="">
+                                  <p class="mt-1">Instagram</p>
+                              </a>
+                          </div>
+                          <div class="d-flex align-items-center" style="margin-top: -10px">
+                              <img src="./img/icons/YouTube_48px.png" alt="" class="social_icon">
+                              <a href="">
+                                  <p class="mt-1">YouTube</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+                      <p class="lead">Get Started</p>
+                      <div class="footer-link-container">
+                          <div class="">
+                              <button class="btn btn0 sign_in"><a
+                                  href="login.html" style="text-decoration: none; color: white">Sign In</a></button>
+                              <button class="btn btn0"><a
+                                  href="register.html" style="text-decoration: none; color: white">Register</a></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <p class="text-center">@2022 Burgee Copyright</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="./js/products.js"></script>
+</body>
+
+</html>

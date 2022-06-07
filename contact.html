@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burgee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/8ad5cf4f0f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darkred ">
+        <div class="container mt-5">
+            <a class="navbar-brand brand-logo-text" href="index.html"  style="font-size: 50px;">Burgee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=""><i class="fa-solid fa-burger" style="font-size: 30px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mt-3 m-auto">
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" aria-current="page" href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link active text-dark" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <hr />
+                <div class="d-grid gap-2 d-flex">
+                    <button class="fa-solid fa-cart-shopping cart-img cart-btn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#Cart"></button>
+                    <button type="button" class="btn btn0 sign_in"><a href="login.html"
+                            style="text-decoration: none; color: white">Sign In</a></button>
+                    <button class="btn btn0" type="button"><a href="register.html"
+                            style="text-decoration: none; color: white">Register</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart -->
+    <div class="modal fade" id="Cart" tabindex="-1" aria-labelledby="CartBody" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div style="position: absolute; height: 5px; width: 100%; margin-left: -12px; border-top-left-radius: 30px; border-top-right-radius: 30px;"
+                        class="bg-darkred"></div>
+                    <div class="d-flex justify-content-end p-2">
+                        <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h1 class="text-start text-darkred"><strong>Cart</strong></h1>
+                    <hr>
+                    <div class="modal-body">
+                        <p class="lead">No item/s available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- log in -->
+    <section class="Contact">
+        <div class="container mt-5 mb-5  border rounded p-5 shadow ">
+            <h1 class="text-center text-darkred mt-5"><strong>Let's start a conversation</strong></h1>
+            <p class="text-center lead">Feel free to get in touch with us with anything about our products and/or
+                services or you can just say hi.</p>
+            <p class="text-center lead">All field/s are required.</p>
+            <hr class="mb-5">
+            <div class="mb-3 w-25 m-auto d-flex justify-content-center align-items-center">
+                <div class="shadow p-4 rounded-5 ms-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-square-phone" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                       <span> Phone</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <span class="text-darkred"><strong>+639000000000</strong></span>
+                     </div>
+                </div>
+                <div class="shadow p-4 rounded-5 ms-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-square-envelope" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                       <span>E-mail</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <span class="text-darkred"><strong>burgee@email.com</strong></span>
+                     </div>
+                </div>
+            </div>
+            <div class="m-auto text-center p-4 rounded-5 mb-5">
+                <span>OR</span>
+            </div>
+            <form>
+                <div class="mb-3 w-75 m-auto">
+                    <label for="name" class="form-label">Name<span class="text-darkred">*</span></label>
+                    <input type="text" class="form-control input-l" id="name" aria-describedby="nameHelp">
+                </div>
+                <div class="mb-3 w-75 m-auto">
+                    <label for="email" class="form-label">Email address<span class="text-darkred">*</span></label>
+                    <input type="email" class="form-control input-l" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3 w-75 m-auto">
+                    <label for="validationTextarea" class="form-label">Message<span class="text-darkred">*</span></label>
+                    <textarea class="form-control rounded-2" rows="8" id="validationTextarea"
+                         required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <button type="submit" class="btn btn0">Send</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer bg-darkred">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <p class="lead">Links</p>
+                        <div class="footer-link-container" style="display: block;">
+                            <a href="index.html">Home</a>
+                            <br>
+                            <a href="about.hmtl">About Us</a>
+                            <br>
+                            <a href="products.html">Products</a>
+                            <br>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <p class="lead">Social Links</p>
+                        <div class="footer-link-container">
+                            <div class="d-flex align-items-center" style="margin-top: -10px">
+                                <img src="./img/icons/facebook_48px.png" alt="" class="social_icon">
+                                <a href="">
+                                    <p class="mt-1">Facebook</p>
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center" style="margin-top: -10px">
+                                <img src="./img/icons/twitter_48px.png" alt="" class="social_icon">
+                                <a href="">
+                                    <p class="mt-1">Twitter</p>
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center" style="margin-top: -10px">
+                                <img src="./img/icons/Instagram_48px.png" alt="" class="social_icon">
+                                <a href="">
+                                    <p class="mt-1">Instagram</p>
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center" style="margin-top: -10px">
+                                <img src="./img/icons/YouTube_48px.png" alt="" class="social_icon">
+                                <a href="">
+                                    <p class="mt-1">YouTube</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <p class="lead">Get Started</p>
+                        <div class="footer-link-container">
+                            <div class="">
+                                <button class="btn btn0 sign_in"><a href="login.html"
+                                        style="text-decoration: none; color: white">Sign In</a></button>
+                                <button class="btn btn0"><a href="register.html"
+                                        style="text-decoration: none; color: white">Register</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">@2022 Burgee Copyright</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
